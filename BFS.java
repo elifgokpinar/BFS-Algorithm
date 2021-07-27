@@ -15,8 +15,7 @@ public class BFS {
 		this.r=r;
 		this.level=level;
 	}
-	
-	
+
 	public double getX() {
 		return x;
 	}
@@ -48,8 +47,7 @@ public class BFS {
 	public void setLevel(int level) {
 		this.level = level;
 	}
-
-
+	
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		//*******Read input by command argument******
@@ -77,16 +75,14 @@ public class BFS {
 			    	  count++;
 			      }
 			      else {
-			    	  
 			    	  String[] splitS = s.split("\\s+");
 			    	  if(splitS[0].isEmpty()) {
-			    		  break;
+			    		break;
 			    	  }
 			    	  BFS position = new BFS(Double.parseDouble(splitS[0]),
 			    	  Double.parseDouble(splitS[1]),Double.parseDouble(splitS[2]),-1);
 			    	  BFS position2 = new BFS(Double.parseDouble(splitS[0]),
-					  Double.parseDouble(splitS[1]),Double.parseDouble(splitS[2]),-1);
-			    	  
+				  Double.parseDouble(splitS[1]),Double.parseDouble(splitS[2]),-1);
 			    	  laptop[i]=position;
 			    	  laptop2[i]=position2;
 			    	  i++;
@@ -94,10 +90,9 @@ public class BFS {
 			  } 
 			    
 			    //Select the first element,ýt's hop distance is 0.
-			    laptop[0].level=0;
-			    laptop2[0].level=0;
-			    
-			    
+			   laptop[0].level=0;
+			   laptop2[0].level=0;
+			    			    
 			   int j=0;
 			   int line=1;
 			   int again=0;
@@ -105,9 +100,7 @@ public class BFS {
 			   int k=0;
 			   for(i=0; i<laptop.length-1; i++) {
 				   again=0;
-				   
 				   if(laptop[i].level!=-1) {
-					   
 					   for(j=i+1; j<laptop.length; j++) {
 						   //If the agent is unvisited.
 						   if(laptop[j].level==-1) {
@@ -117,7 +110,6 @@ public class BFS {
 							   if(hop <= (laptop[i].r+laptop[j].r)) {
 								   laptop[j].level=laptop[i].level+1;
 								   
-					   
 								   double temp=laptop[j].x;
 								   laptop[j].x=laptop[times].x;
 								   laptop[times].x=temp;
@@ -154,10 +146,8 @@ public class BFS {
 							  laptop[i].level=0;
 						  }
 						  laptop2[j].level=laptop[i].level;
-				   } 
-					   
+				   }    
 				   }
-	  
 			   }
 			    
 			   for(i=0; i<laptop.length; i++) {
@@ -173,8 +163,6 @@ public class BFS {
 						output.println(laptop2[i].level);
 					}
 					output.close();
-				}
-			    
+				}	    
 	}
-
 }
