@@ -1,4 +1,4 @@
-//HW1 Elif Gökpýnar
+//HW1 Elif GÃ¶kpinar
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -52,7 +52,6 @@ public class BFS {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		
 		//*******Read input by command argument******
 		File fileInput= new File(args[0]);
 		
@@ -64,7 +63,7 @@ public class BFS {
 		int sizeArray = 0;
 		double hop=0;
 					
-				//Read input file
+			    //Read input file
 			    Scanner input = new Scanner(fileInput); 
 			  
 			    while (input.hasNextLine()) { 
@@ -94,7 +93,7 @@ public class BFS {
 			      }
 			  } 
 			    
-			    //Select the first element,ýt's hop distance is 0.
+			    //Select the first element,Ã½t's hop distance is 0.
 			    laptop[0].level=0;
 			    laptop2[0].level=0;
 			    
@@ -143,8 +142,7 @@ public class BFS {
 				   }
 			   }
 			   
-			  
-			
+		
 			    //Find the correct position of agent.
 			   for(i=1; i<laptop.length; i++) {
 				   for(j=1; j<laptop.length; j++) {
