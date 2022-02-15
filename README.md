@@ -3,7 +3,7 @@
 <div>
 <h3>📃 Code algorithm </h3>
 <ol>
-<li>The program run from command line argument</li>
+<li>The program run from command line argument.</li>
 <li>The test file is read. At the same time x,y and r are filled in the objects.</li>
 <li>Objects are put in the array.</li>
 <li>The first element of the array is chosen as the beginning point. So, Its hop distance value must be 0.</li>
