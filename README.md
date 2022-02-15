@@ -3,7 +3,8 @@
 <div>
 <h3>📃 Code algorithm </h3>
 <ol>
-<li>Firstly, the test file is read from the command line argument. At the same time x,y and r are filled in the objects.</li>
+<li>The program run from command line argument</li>
+<li>The test file is read. At the same time x,y and r are filled in the objects.</li>
 <li>Objects are put in the array.</li>
 <li>The first element of the array is chosen as the beginning point. So, Its hop distance value must be 0.</li>
 <li>Then, distances are calculated with other points. If the distance is available for each of the two agents, the level of the second agent is set. So, for loop loops again the same situation.</li>
